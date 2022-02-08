@@ -16,7 +16,7 @@ app.use(routes);
 
 const io = new Server(server, {
   cors: {
-    origin: "*",
+    origin: ["http://localhost:3000", "https://yovels-cool-chat-api.herokuapp.com"],
     methods: ["GET", "POST"],
   },
 });
